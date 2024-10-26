@@ -1,0 +1,16 @@
+:root {
+  /* COLRS */
+  --mainBlack: rgba(22, 28, 45, 1);
+  --activeColor: rgba(251, 109, 69, 1);
+  --homeBgColor: rgba(104, 213, 133, 0.1);
+  --blueColor: rgba(71, 59, 240, 1);
+  --white: rgba(255, 255, 255, 1);
+  --greenColor: rgba(104, 213, 133, 1);
+  --lightGrey: rgba(244, 247, 250, 1);
+
+  /* FONT SIZES */
+  --headOne: 60px;
+
+  /* FONTs */
+  --roboto: "Roboto", serif;
+}
