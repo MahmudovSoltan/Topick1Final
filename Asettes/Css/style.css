@@ -63,13 +63,14 @@
   padding-top: 120px;
   background-color: var(--homeBgColor);
   background-image: url("../Images/bacgorund.svg");
-  /* padding-left: 256px; */
+  background-position: center;
+  padding-left: 251px;
 }
 .job_left {
-  /* width: 40%; */
+  width: 518px;
 }
 .job_title {
- width: 518px;
+  width: 100%;
   max-width: 348px;
   font-size: 60px;
   font-weight: 700;
@@ -78,6 +79,55 @@
   text-align: left;
   color: var(--mainBlack);
   margin-bottom: 21px;
+}
+.animated-text::after {
+  content: "changes life.";
+  animation: typing 2s steps(10) forwards,
+    deleting 2s steps(10) 2s forwards infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 1px solid black; /* Yazı effekti üçün xətt */
+  box-sizing: border-box;
+  padding-top: -5px;
+}
+@keyframes typing {
+  0%,
+  50% {
+    width: 0;
+  }
+  60%,
+  100% {
+    width: 100%;
+  }
+}
+
+/* Xəttin yanıb sönməsi */
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: black;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Geri silmə effekti */
+@keyframes deleting {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
 .job_desc {
   max-width: 348px;
@@ -185,3 +235,183 @@
   text-align: left;
 }
 /*  JOBS END */
+
+/* FIND JOB START */
+.faind_job_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 69px;
+  border-bottom: 1px solid rgba(231, 233, 237, 1);
+  padding-bottom: 112px;
+}
+.faindjob_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 113px;
+}
+.fainjob_title {
+  color: var(--mainBlack);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.2000000476837158px;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.find_job_desc {
+  max-width: 596px;
+  color: var(--mainBlack);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+  margin-bottom: 96px;
+  opacity: 70%;
+}
+.faind_job_right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.right_item {
+  display: flex;
+  gap: 22px;
+}
+.right_count {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blueColor);
+  color: var(--white);
+  border-radius: 50px;
+}
+.right_item_title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: var(--mainBlack);
+  margin-bottom: 10px;
+}
+.right_item_desc {
+  width: 339px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: var(--mainBlack);
+  opacity: 70%;
+}
+.jaind_job_left {
+  animation: bounce 4.5s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* FIND JOB END */
+
+/* FTUTURE JOB START */
+.fruture_job_section {
+  background-image: url("../Images/bacgorund.svg");
+  background-position: center;
+  padding-bottom: 141px;
+  padding-top: 107px;
+}
+.frutute_title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.2000000476837158px;
+  text-align: left;
+  color: var(--mainBlack);
+  margin-bottom: 17px;
+ 
+}
+.fruture_desc {
+  width: 353px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: var(--mainBlack);
+  opacity: 70%;
+  margin-bottom: 84px;
+}
+.fruture_boxs {
+  display: flex;
+  gap: 30px;
+}
+.fruture_box {
+  border: 1px solid rgba(231, 233, 237, 1);
+  padding: 30px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--white);
+}
+.box_time {
+  color: var(--greenColor);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 1.625px;
+  text-align: left;
+  margin-bottom: 17px;
+}
+.fruture_box:nth-child(2) .box_time {
+  color: var(--blueColor);
+}
+
+.fruture_box:nth-child(4) .box_time {
+  color: var(--activeColor); 
+}
+
+.job_name {
+  width: 183px;
+  height: 64px;
+  color: var(--mainBlack);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.job_addres {
+  color: var(--mainBlack);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  opacity: 70%;
+  padding-bottom: 56px;
+}
+.box_bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--mainBlack);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+}
+/* FTUTURE JOB END */
