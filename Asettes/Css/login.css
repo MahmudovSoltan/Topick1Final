@@ -1,0 +1,102 @@
+.container {
+    padding: 0 251px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  
+  /* HEADER START */
+  .header {
+      top: 0;
+      display: flex;
+      align-items: center;
+      gap: 234px;
+      padding-top: 28px;
+      background: var(--homeBgColor);
+    }
+    .navbar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar_links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    .header_logo {
+      /* font-family: Rubik; */
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 33.18px;
+      letter-spacing: -0.15555556118488312px;
+      text-align: left;
+      color: var(--mainBlack);
+    }
+   
+    /* HEADER END */
+  
+  
+  
+    /* FOOTER START  */
+  footer {
+    padding: 120px 0 165px;
+    background-color: var(--mainBlack);
+  }
+  .footer_content {
+    display: flex;
+    gap: 101px;
+  }
+  .footer_logo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer_logo_title {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.18px;
+    letter-spacing: -0.15555556118488312px;
+    text-align: left;
+  }
+  .footer_desc {
+    width: 274px;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    opacity: 65%;
+  }
+  .footer_sosials {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .footer_right_items {
+    display: flex;
+    gap: 50px;
+  }
+  .footer_right_item_title {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    opacity: 65%;
+    padding-bottom: 20px;
+  }
+  .footer_right_item {
+    width: 130px;
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+  }
+  /* FOOTER END  */
+  
