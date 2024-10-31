@@ -194,16 +194,16 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 224px;
-  height: 275px;
+  /* width: 224px;
+  height: 275px; */
 }
 .Highskill_img_right {
   margin-top: 42px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 225px;
-  height: 275px;
+  /* width: 225px;
+  height: 275px; */
 }
 
 .Highskilledcoders_content {
