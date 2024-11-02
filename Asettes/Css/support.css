@@ -9,11 +9,11 @@
   justify-content: center;
 }
 .support_text {
-  width: 40%;
+  /* width: 40%; */
   text-align: center;
 }
 .support_main_content {
-  width: 51%;
+  /* width: 51%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
