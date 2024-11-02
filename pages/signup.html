@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="../Asettes/Css/qlobal.css">
-    <link rel="stylesheet" href="../Asettes/Css/login.css">
+    <link rel="stylesheet" href="../Asettes/Css/signup.css">
 </head>
 
 <body>
@@ -30,25 +30,31 @@
     </header>
     <!-- HEADER END -->
 
-    <!-- SIGN IN START -->
+    <!-- SIGN UP START -->
     <main>
-        <section class="signin_section">
-            <div class="signin_container container">
-                <div class="signin_content_container">
-                    <h1 class="signin_title">Login</h1>
-                    <p class="signin_desc">To get started, you need to sign in here.</p>
+        <section class="signup_section">
+            <div class="signup_container container">
+                <div class="signup_content_container">
+                    <h1 class="signup_title">Sign up</h1>
+                    <p class="signup_desc">To get started, you need to sign up here.</p>
                 </div>
-                <div class="signin_form_container">
-                    <form class="signin_form">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="i.e. john@mail.com">
-                        <label for="password">Password</label>
+                <div class="signup_form_container">
+                    <form class="signup_form">
+                        <label for="name">First & Last Name</label>
+                        <input id="name" name="name" type="text" placeholder="i.e. John Doe">                    
+                        <label for="email">Email</label>                     
+                        <input id="email" name="email" type="email" placeholder="i.e. john@mail.com">                      
+                        <label for="password">Password</label>              
+                        <input id="password" name="password" type="password" placeholder="********">                        
+                        <label for="password">Confirm Password</label>                 
                         <input id="password" name="password" type="password" placeholder="********">
-                        <button type="submit" class="signin_btn">Sign In</button>
+                    <div class="btn">
+                        <button type="submit" class="signup_btn">Create an account</button>
+                    </div>
                     </form>
-                        <div class="signin_link">
-                            <p>Don’t have an account?
-                                <a href="#">Create an account</a>
+                        <div class="signup_link">
+                            <p>Already have an account?
+                                <a href="../pages/login.html">Sign in now</a>
                             </p>
                         </div>
                 </div>
@@ -56,7 +62,7 @@
         </section>
     </main>
 
-    <!-- SIGN IN END -->
+    <!-- SIGN UP END -->
 
     <!-- FOOTER START -->
     <footer>
